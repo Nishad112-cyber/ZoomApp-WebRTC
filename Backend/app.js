@@ -20,7 +20,7 @@ app.use(express.urlencoded({limit :"40kb", extended :true}));
 
 
 app.use("/api/v1/users", usersRoutes);
-//app.use("/api/v2/users", newUserRoutes);
+// app.use("/api/v2/users", newUserRoutes);
 const start=  async () =>{
 
     app.set("mongo_user")

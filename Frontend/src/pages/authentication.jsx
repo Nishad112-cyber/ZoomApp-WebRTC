@@ -72,10 +72,8 @@ export default function Authentication() {
                 <CssBaseline />
 
                 <Grid
-                    item
-                    xs={12}
-                    sm={4}
-                    md={7}
+                     size={{xs:12 ,sm: 4 , md: 7}}
+                    
                     sx={{
                         height: '100vh',
                         backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80)',

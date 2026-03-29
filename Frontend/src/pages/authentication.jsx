@@ -75,7 +75,7 @@ export default function Authentication() {
                      size={{xs:12 ,sm: 4 , md: 7}}
                     
                     sx={{
-                        height: '100vh',
+                        height: { xs: "40vh", sm: "100vh" }, 
                         backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80)',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: (t) =>
@@ -86,7 +86,7 @@ export default function Authentication() {
 
                     
                 />
-                <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+                <Grid size ={{xs :12, sm: 8, md :5 }}>
                     <Box
                         sx={{
                             my: 8,

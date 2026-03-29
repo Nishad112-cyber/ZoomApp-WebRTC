@@ -78,7 +78,7 @@ export default function Authentication() {
                     md={7}
                     sx={{
                         height: '100vh',
-                        backgroundImage: 'url("https://picsum.photos/1200")',
+                        backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80)',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: (t) =>
                             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],

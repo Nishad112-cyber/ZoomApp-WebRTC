@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import server from "../environment";
+import server from "../pages/environment";  // correct relative path
 import { AuthContext } from "./AuthContext";
 
 const client = axios.create({

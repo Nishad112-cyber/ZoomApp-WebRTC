@@ -1,4 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
+
 import {createServer} from "node:http";
 import {Server} from "socket.io";
 import mongoose from "mongoose";
@@ -24,7 +27,7 @@ app.use("/api/v1/users", usersRoutes);
 const start=  async () =>{
 
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect("mongodb+srv://n62495229_db_user:zoom@cluster1.qd5h3ej.mongodb.net/?appName=Cluster1")
+    const connectionDb = await mongoose.connect(process.env.MONG_URL)
     console.log(`mongo database connected to my ${connectionDb.connection.host}`)
 
    server.listen(app.get("port"), () => {

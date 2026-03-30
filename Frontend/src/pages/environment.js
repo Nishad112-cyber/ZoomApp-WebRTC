@@ -1,3 +1,3 @@
-const server = "http://localhost:8000";
+const server = "https://zoomapp-2webrtc.onrender.com";
 
 export default server;
